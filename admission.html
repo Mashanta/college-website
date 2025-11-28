@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige College - Admission</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <div class="logo">PC</div>
+                <h1 class="college-name">Prestige College of Arts, Science & Commerce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admission.html" class="active">Admission</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Admission Application Form</h1>
+
+<!-- With this (use your actual Formspree URL) -->
+<form class="admission-form" action="https://formspree.io/f/mblvazpn" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Residential Address *</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="stream">Preferred Stream *</label>
+                    <select id="stream" name="stream" required>
+                        <option value="">Select Stream</option>
+                        <option value="science">Science</option>
+                        <option value="arts">Arts</option>
+                        <option value="commerce">Commerce</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Preferred Course *</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <optgroup label="Science">
+                            <option value="cs">Computer Science</option>
+                            <option value="math">Mathematics</option>
+                            <option value="physics">Physics</option>
+                        </optgroup>
+                        <optgroup label="Arts">
+                            <option value="english">English Literature</option>
+                            <option value="sociology">Sociology</option>
+                            <option value="history">History</option>
+                        </optgroup>
+                        <optgroup label="Commerce">
+                            <option value="accountancy">Accountancy</option>
+                            <option value="business">Business Studies</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="highSchool">High School Percentage *</label>
+                    <input type="number" id="highSchool" name="highSchool" min="0" max="100" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="previousSchool">Previous School/College Name *</label>
+                    <input type="text" id="previousSchool" name="previousSchool" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emergencyName">Emergency Contact Name *</label>
+                    <input type="text" id="emergencyName" name="emergencyName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emergencyPhone">Emergency Contact Phone *</label>
+                    <input type="tel" id="emergencyPhone" name="emergencyPhone" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="declaration" required>
+                        I hereby declare that all information provided is true and correct to the best of my knowledge.
+                    </label>
+                </div>
+
+                <button type="submit">Submit Application</button>
+                <input type="hidden" name="_next" value="https://mashanta.github.io/college-website/thank-you.html">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Prestige College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
